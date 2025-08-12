@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Form and Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+        header, main, footer {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            width: auto;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        img, video, audio {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Multi-Section HTML5 Page</h1>
+    <p>This page demonstrates the use of lists, tables, media, and an accessible HTML5 form with native validation.</p>
+</header>
+
+<main>
+    <!-- LISTS SECTION -->
+    <section>
+        <h2>My Favorite Fruits</h2>
+        <ul>
+            <li>Mango</li>
+            <li>Strawberry</li>
+            <li>Watermelon</li>
+        </ul>
+
+        <h3>Steps to Make a Smoothie</h3>
+        <ol>
+            <li>Wash the fruits.</li>
+            <li>Cut them into small pieces.</li>
+            <li>Blend with milk or yogurt.</li>
+            <li>Serve chilled.</li>
+        </ol>
+    </section>
+
+    <!-- TABLE SECTION -->
+    <section>
+        <h2>Weekly Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Activity</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>Gym Workout</td>
+                    <td>7:00 AM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Cooking Class</td>
+                    <td>5:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Movie Night</td>
+                    <td>8:00 PM</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- MEDIA SECTION -->
+    <section>
+        <h2>Media Showcase</h2>
+        <figure>
+            <img src="https://cdn.pixabay.com/photo/2017/02/01/22/02/smoothie-2038398_1280.jpg" alt="Fresh fruit smoothie">
+            <figcaption>A refreshing fruit smoothie.</figcaption>
+        </figure>
+
+        <video controls>
+            <source src="https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <audio controls>
+            <source src="https://sample-videos.com/audio/mp3/crowd-cheering.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section>
+        <h2>Contact Form</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="fullname" required minlength="3">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+254712345678" pattern="\+?\d{10,15}" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label for="contact-method">Preferred Contact Method:</label>
+                <select id="contact-method" name="contact-method" required>
+                    <option value="">--Select an option--</option>
+                    <option>Email</option>
+                    <option>Phone</option>
+                    <option>WhatsApp</option>
+                </select>
+
+                <label>
+                    <input type="checkbox" name="subscribe" value="yes"> Subscribe to our newsletter
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Message</legend>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" placeholder="Type your message here..." rows="5" required></textarea>
+            </fieldset>
+
+            <input type="submit" value="Submit Form">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 My HTML5 Project. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
